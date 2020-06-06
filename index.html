@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<p id="gender"> gender:</p>
+	
+	<p id ="phone">phone:</p>
+	<p id ="nat">nat:</p>
+	<p id ="email">email:</p>
+	<p id ="out">name:</p>
+	<p id ="password">password:</p>
+	<p id ="login">login:</p>
+	<span id="status">status: <div id="c"></div> </span>
+	<style>
+		#status{
+			display: -webkit-inline-flex;
+			display: -moz-inline-flex;
+			display: -ms-inline-flex;
+			display: -o-inline-flex;
+			display: inline-flex;
+		}
+		#c{
+			width: 10px;
+			height: 10px;
+			background: #fff;
+			border-radius: 50%;
+			
+			transform: translate(5px,40%);
+
+		}
+		#button{
+			display:flex;
+			flex-direction:column;
+		}
+	</style>
+	<button  id="button">generate</button>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <script src="main.js"></script>
+    <script src="data.js"></script>
+</body>
+</html>
