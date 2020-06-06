@@ -24,7 +24,7 @@ setInterval(() =>{
 	  promise.then(Interval)
 	  .catch(() => c.style.background = "#C9132D" )
 }, 11000);}
-
+time()
 function getCallback (data) {
   	let DataAPI = data.data.results[0]
   
