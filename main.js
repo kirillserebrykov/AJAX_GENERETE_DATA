@@ -56,3 +56,4 @@ const Interval = (data) =>{
      	  c.style.background = "#3BCD27"
      }
 }
+console.log("dev_2")
