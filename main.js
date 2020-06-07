@@ -18,13 +18,21 @@ let button = document.querySelector("#button").onclick = () =>{
 	  
 	
 }
+
+let reg = () =>{
+	const promise = PostDATA("243243432")
+	 promise.then((data) =>{console.log(data)})
+}
+reg()
+
 //проверка статуса сити
 let time = () =>{
 setInterval(() =>{
 	const promise = getData()
 	  promise.then(Interval)
 	  .catch(() => c.style.background = "#C9132D" )
-}, 11000);}
+}, 1000);}
+
 //функция которая работает с DOM и добавляет значения из DLL левела 
 function getCallback (data) {
   	let DataAPI = data.data.results[0]
@@ -37,7 +45,7 @@ function getCallback (data) {
 	i.innerHTML = "name:"  +DataAPI.id.name
   	password.innerHTML = "password:"+ DataAPI.login.password
   	login.innerHTML = "login:" + DataAPI.login.username
-  	re
+  	
   	//провека чему равен name если "" тогда name присвоить undefined  
       	if (DataAPI.id.name == ""){
         i.innerHTML = "name:"  + "undefined"
@@ -57,4 +65,4 @@ const Interval = (data) =>{
      }
 }
 
-console.log("dev_2")
+
